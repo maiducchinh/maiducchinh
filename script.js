@@ -1,14 +1,11 @@
-class Person {
-  constructor(name, job) {
-    this.name = name;
-    this.job = job;
+function login()
+{
+  let a = username.value 
+  let b = password.value 
+  if (a == "abc" && b== "123")
+  {
+    window.open("home.html")
+    document.getElementById(compiler).style.display="block"
   }
-
-  print() {
-    const { name, job } = this;
-    console.log(`${name}, ${job}`);
-  }
+  else document.write("không hợp lệ")
 }
-
-const thatGuy = new Person('John Doe', 'Software Engineer');
-thatGuy.print();
